@@ -18,7 +18,7 @@ check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?
 | Release     | CRAN       | `install.packages("epiR")`                                             |
 
 
-The tables below provide a summary of the main functions and data sets in the package. An alphabetical list of all functions and datasets is available by typing \code`library(help = epiR)` in the R console.
+The tables below provide a summary of the main functions and data sets in the package. An alphabetical list of all functions and datasets is available by typing `library(help = epiR)` in the R console.
 
 For further information on any of these functions, type `help(name)` or `?name` where `name` is the name of the function or dataset.
 
@@ -26,7 +26,7 @@ For details on how to use `epiR` for routine epidemiological work start R, type 
 
 ## Contents
 
-The functions in \pkg{epiR} can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. A summary of the package functions is as follows:
+The functions in `epiR` can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. A summary of the package functions is as follows:
 
 ### I. EPIDEMIOLOGY
 
