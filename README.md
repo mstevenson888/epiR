@@ -32,7 +32,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 1. Descriptive statistics
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.conf`           | Confidence intervals.                                                                      |
 | `epi.descriptives`   | Descriptive statistics.                                                                    |
@@ -40,7 +40,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 2. Measures of health and measures of association
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.directadj`      | Directly adjusted incidence rate estimates.                                                |
 | `epi.edr`            | Compute estimated dissemination ratios from outbreak event data.                           |
@@ -52,7 +52,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 3. Diagnostic tests
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.betabuster`     | An R version of Wes Johnson and Chun-Lung Su's Betabuster.                                 |
 | `epi.herdtest`       | Estimate the characteristics of diagnostic tests applied at the herd (group) level.        |
@@ -64,7 +64,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 4. Meta-analysis
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.dsl`            | Mixed-effects meta-analysis of binary outcome data using the DerSimonian and Laird method. |
 | `epi.iv`             | Fixed-effects meta-analysis of binary outcome data using the inverse variance method.      |
@@ -74,7 +74,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 5. Regression analysis tools
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.cp`             | Extract unique covariate patterns from a data set.                                         |
 | `epi.cpresids`       | Compute covariate pattern residuals from a logistic regression model.                      |
@@ -83,7 +83,7 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 6. Data manipulation tools
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.asc`            | Write a matrix to an ASCII raster file.                                                    |
 | `epi.convgrid`       | Convert British National Grid georeferences to easting and northing coordinates.           |
@@ -97,45 +97,36 @@ The functions in \pkg{epiR} can be categorised into two main groups: Tools for e
 
 The naming convention for the sample size functions in `epiR` is: `epi.ss` (sample size) + an abbreviation to represent the sampling design (e.g., `simple`, `strata`, `clus1`, `clus2`) + an abbreviation of the objectives of the study (`est` when you want to estimate a population parameter or `comp` when you want to compare two groups) + a single letter defining the outcome variable type (`b` for binary, `c` for continuous and `s` for survival [time to event] data).
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.sssimpleestb`   | Sample size to estimate a binary outcome using simple random sampling.                     |
 | `epi.sssimpleestc`   | Sample size to estimate a continuous outcome using simple random sampling.                 |
-
 | `epi.ssstrataestb`   | Sample size to estimate a binary outcome using stratified random sampling.                 |
 | `epi.ssstrataestc`   | Sample size to estimate a continuous outcome using stratified random sampling.             |
-
 | `epi.ssclus1estb`    | Sample size to estimate a binary outcome using one-stage cluster sampling.                 |
 | `epi.ssclus1estc`    | Sample size to estimate a continuous outcome using one-stage cluster sampling.             |
-
 | `epi.ssclus2estb`    | Sample size to estimate a binary outcome using two-stage cluster sampling.                 |
 | `epi.ssclus2estc`    | Sample size to estimate a continuous outcome using two-stage cluster sampling.             |
-
 | `epi.ssxsectn`       | Sample size, power or detectable prevalence ratio for a cross-sectional study.             |
 | `epi.sscohortc`      | Sample size, power or detectable risk ratio for a cohort study using count data.           |
 | `epi.sscohortt`      | Sample size, power or detectable risk ratio for a cohort study using time at risk data.    |
 | `epi.sscc`           | Sample size, power or detectable odds ratio for case-control studies.                      |
-
 | `epi.sscompb`        | Sample size, power and detectable risk ratio when comparing binary outcomes.               |
 | `epi.sscompc`        | Sample size, power and detectable risk ratio when comparing continuous outcomes.           |
 | `epi.sscomps`        | Sample size, power and detectable hazard when comparing time to event.                     |
-
 | `epi.ssequb`         | Sample size for a parallel equivalence or equality trial, binary outcome.                  |
 | `epi.ssequc`         | Sample size for a parallel equivalence or equality trial, continuous outcome.              |
-
 | `epi.sssupb`         | Sample size for a parallel superiority trial, binary outcome.                              |
 | `epi.sssupc`         | Sample size for a parallel superiority trial, continuous outcome.                          |
- 
 | `epi.ssninfb`        | Sample size for a parallel non-inferiority trial, binary outcome.                          |
 | `epi.ssninfc`        | Sample size for a parallel non-inferiority trial, continuous outcome.                      |
-
 | `epi.ssdetect`       | Sample size to detect an event.                                                            |
 | `epi.ssdxsesp`       | Sample size to estimate the sensitivity or specificity of a diagnostic test.               |
 | `epi.ssdxtest`       | Sample size to validate a diagnostic test in the absence of a gold standard.               |
 
 8. Miscellaneous functions
 
-| Function name        | Details                                                                                    |
+| Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.prcc`           | Compute partial rank correlation coefficients.                                             |
 | `epi.psi`            | Compute proportional similarity indices.                                                   |
@@ -143,7 +134,7 @@ The naming convention for the sample size functions in `epiR` is: `epi.ss` (samp
 
 9. Data sets
 
-| Data set name        | Details                                                                                    |
+| Data set             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.epidural`       | Rates of use of epidural anaesthesia in trials of caregiver support.                       |
 | `epi.incin`          | Laryngeal and lung cancer cases in Lancashire 1974 - 1983.                                 |
