@@ -138,99 +138,89 @@ The naming convention for the sample size functions in `epiR` is: `epi.ss` (samp
 |----------------------|--------------------------------------------------------------------------------------------|
 | `epi.epidural`       | Rates of use of epidural anaesthesia in trials of caregiver support.                       |
 | `epi.incin`          | Laryngeal and lung cancer cases in Lancashire 1974 - 1983.                                 |
-| `epi.SClip`          | Lip cancer in Scotland 1975 - 1980.                         |
+| `epi.SClip`          | Lip cancer in Scotland 1975 - 1980.                                                        |
+
+### II. SURVEILLANCE
+
+Below, `SSe` stands for surveillance system sensitivity. That is, the average probability that a surveillance system (as a whole) will return a positive surveillance outcome, given disease is present in the population at a level equal to or greater than a specified design prevalence.
+
+1. Representative sampling --- sample size
+
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sspfree.rs`     | Defined probability of disease freedom.                                                    |
+| `rsu.sssep.rs`       | SSe, perfect test specificity.                                                             |
+| `rsu.sssep.rs2st`    | SSe, two stage sampling.                                                                   |
+| `rsu.sssep.rsfreecalc`| SSe, imperfect test specificity.                                                          |
+| `rsu.sssep.rspool`   | SSe, pooled sampling.                                                                      |
 
 
-\section{II. SURVEILLANCE}{
+2. Representative sampling --- surveillance system sensitivity and specificity
 
-Below, SSe stands for surveillance system sensitivity. That is, the average probability that a surveillance system (as a whole) will return a positive surveillance outcome, given disease is present in the population at a level equal to or greater than a specified design prevalence.
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sep.rs`         | SSe, representative sampling.                                                              |
+| `rsu.sep.rs2st`      | SSe, representative two-stage sampling.                                                    |
+| `rsu.sep.rsmult`     | SSe, representative multiple surveillance components.                                      |
+| `rsu.sep.rsfreecalc` | SSe, imperfect test specificity.                                                           |
+| `rsu.sep.rspool`     | SSe, representative pooled sampling.                                                       |
+| `rsu.sep.rsvarse`    | SSe, varying surveillance unit sensitivity.                                                |
+| `rsu.spp.rs`         | Surveillance system specificity.                                                           |
 
-\subsection{1. Representative sampling --- sample size}{
+3. Representative sampling --- probability of disease freedom
 
-\tabular{ll}{
-    \code{\link{rsu.sspfree.rs}}           \tab  Defined probability of disease freedom.\cr
-    \code{\link{rsu.sssep.rs}}             \tab  SSe, perfect test specificity. \cr    
-    \code{\link{rsu.sssep.rs2st}}          \tab  SSe, two stage sampling. \cr
-    \code{\link{rsu.sssep.rsfreecalc}}     \tab  SSe, imperfect test specificity. \cr
-    \code{\link{rsu.sssep.rspool}}         \tab  SSe, pooled sampling. \cr 
- }
-}
-  
-\subsection{2. Representative sampling --- surveillance system sensitivity and specificity}{
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.pfree.rs`       | Probability of disease freedom for a single or multiple time periods.                      |
+| `rsu.pfree.equ`      | Equilibrium probability of disease freedom.                                                |
 
-\tabular{ll}{
-    \code{\link{rsu.sep.rs}}             \tab  SSe, representative sampling. \cr
-    \code{\link{rsu.sep.rs2st}}          \tab  SSe, representative two-stage sampling. \cr
-    \code{\link{rsu.sep.rsmult}}         \tab  SSe, representative multiple surveillance components. \cr
-    \code{\link{rsu.sep.rsfreecalc}}     \tab  SSe, imperfect test specificity. \cr
-    \code{\link{rsu.sep.rspool}}         \tab  SSe, representative pooled sampling. \cr
-    \code{\link{rsu.sep.rsvarse}}        \tab  SSe, varying surveillance unit sensitivity. \cr
-    \code{\link{rsu.spp.rs}}             \tab  Surveillance system specificity. \cr
-  }
-}  
 
-\subsection{3. Representative sampling --- probability of disease freedom}{
+4. Risk-based sampling --- sample size
 
-\tabular{ll}{
-    \code{\link{rsu.pfree.rs}}            \tab  Probability of disease freedom for a single or multiple time periods. \cr
-    \code{\link{rsu.pfree.equ}}           \tab  Equilibrium probability of disease freedom. \cr
-  }
-}  
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sssep.rbsrg`    | SSe, single sensitivity for each risk group.                                               |
+| `rsu.sssep.rbmrg`    | SSe, multiple sensitivities within risk groups.                                            |
+| `rsu.sssep.rb2st1rf` | SSe, 2 stage sampling, 1 risk factor.                                                      |
+| `rsu.sssep.rb2st2rf` | SSe, 2 stage sampling, 2 risk factors.                                                     |
 
-\subsection{4. Risk-based sampling --- sample size}{
+5. Risk-based sampling --- surveillance system sensitivity and specificity
 
-\tabular{ll}{
-    \code{\link{rsu.sssep.rbsrg}}            \tab  SSe, single sensitivity for each risk group. \cr
-    \code{\link{rsu.sssep.rbmrg}}            \tab  SSe, multiple sensitivities within risk groups. \cr
-    \code{\link{rsu.sssep.rb2st1rf}}         \tab  SSe, 2 stage sampling, 1 risk factor. \cr
-    \code{\link{rsu.sssep.rb2st2rf}}         \tab  SSe, 2 stage sampling, 2 risk factors. \cr
-  }
-} 
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sep.rb`         | SSe, risk-based sampling.                                                                  |
+| `rsu.sep.rb1rf`      | SSe, risk-based sampling, 1 risk factor.                                                   |
+| `rsu.sep.rb2rf`      | SSe, risk-based sampling, 2 risk factors.                                                  |
+| `rsu.sep.rbvarse`    | SSe, risk-based sampling, varying unit sensitivity.                                        |
+| `rsu.sep.rb2st`      | SSe, 2-stage risk-based sampling.                                                          |
 
-\subsection{5. Risk-based sampling --- surveillance system sensitivity and specificity}{
+6. Risk-based sampling --- probability of disease freedom
 
-\tabular{ll}{
-    \code{\link{rsu.sep.rb}}                 \tab  SSe, risk-based sampling. \cr
-    \code{\link{rsu.sep.rb1rf}}              \tab  SSe, risk-based sampling, 1 risk factor. \cr
-    \code{\link{rsu.sep.rb2rf}}              \tab  SSe, risk-based sampling, 2 risk factors. \cr
-    \code{\link{rsu.sep.rbvarse}}            \tab  SSe, risk-based sampling, varying unit sensitivity. \cr
-    \code{\link{rsu.sep.rb2st}}              \tab  SSe, 2-stage risk-based sampling. \cr
-  }
-} 
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.pfree.equ`      | Equilibrium probability of disease freedom.                                                |
 
-\subsection{6. Risk-based sampling --- probability of disease freedom}{
+7. Census sampling --- surveillance system sensitivity
 
-\tabular{ll}{
-    \code{\link{rsu.pfree.equ}}           \tab  Equilibrium probability of disease freedom. \cr
-  }
-}  
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sep.cens`       | SSe, census sampling.                                                                      |
 
-\subsection{7. Census sampling --- surveillance system sensitivity}{
+8. Passive surveillance --- surveillance system sensitivity
 
-\tabular{ll}{
-    \code{\link{rsu.sep.cens}}                \tab  SSe, census sampling. \cr
-  }
-} 
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.sep.pass`       | SSe, passive surveillance.                                                                 |
 
-\subsection{8. Passive surveillance --- surveillance system sensitivity}{
+9. Miscellaneous functions
 
-\tabular{ll}{
-    \code{\link{rsu.sep.pass}}                 \tab  SSe, passive surveillance. \cr
-  }
-} 
-
-\subsection{9. Miscellaneous functions}{
-
-\tabular{ll}{
-    \code{\link{rsu.adjrisk}}              \tab  Adjusted risk values. \cr
-    \code{\link{rsu.dxtest}}               \tab  Series and parallel diagnostic test interpretation. \cr
-    \code{\link{rsu.epinf}}                \tab  Effective probability of disease. \cr
-    \code{\link{rsu.pstar}}                \tab  Design prevalence back calculation. \cr
-    \code{\link{rsu.sep}}                  \tab  Probability disease is less than specified design prevalence. \cr
-  }
- } 
-}
-
+| Function             | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `rsu.adjrisk`        | Adjusted risk values.                                                                      |
+| `rsu.dxtest`         | Series and parallel diagnostic test interpretation.                                        |
+| `rsu.epinf`          | Effective probability of disease.                                                          |
+| `rsu.pstar`          | Design prevalence back calculation.                                                        |
+| `rsu.sep`            | Probability disease is less than specified design prevalence.                              |
 
 Once you have downloaded the package, you can then load it using:
 
