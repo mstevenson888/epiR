@@ -23,8 +23,6 @@ zero-inflation, convergence or singularity.
 ## Installation
 
 [![CRAN](http://www.r-pkg.org/badges/version/epiR)](https://cran.r-project.org/package=epiR)
-[![performance status
-badge](https://easystats.r-universe.dev/badges/epiR)](https://easystats.r-universe.dev)
 [![R
 check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?branch=main)](https://github.com/easystats/epiR/actions)
 
