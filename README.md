@@ -4,7 +4,7 @@
 [![total](https://cranlogs.r-pkg.org/badges/grand-total/epiR)](https://cranlogs.r-pkg.org/)
 [![status](https://tinyverse.netlify.com/badge/epiR)](https://CRAN.R-project.org/package=epiR)
 
-epiR is a package of tools for the quantitative epidemiologist. The package is developed and maintained by the [Veterinary Epidemiology group](https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne) at the [University of Melbourne](https://www.unimelb.edu.au/), Australia and [Ausvet](https://ausvet.com.au), Australia.
+`epiR` is a package of tools for quantitative epidemiologists developed and maintained by the [Veterinary Epidemiology group](https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne) at the [University of Melbourne](https://www.unimelb.edu.au/), Australia and [Ausvet](https://ausvet.com.au), Australia.
 
 The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id1611139482) and [Android](https://play.google.com/store/apps/details?id=au.melbourne.uni.epitools) devices provides access to many of the functions in `epiR` using a smart phone.
 
