@@ -1,6 +1,5 @@
-# performance <img src='man/figures/logo.png' align="right" height="139" />
+# epiR <img src='man/figures/logo.png' align="right" height="139" />
 
-[![DOI](https://joss.theoj.org/papers/10.21105/joss.03139/status.svg)](https://doi.org/10.21105/joss.03139)
 [![downloads](http://cranlogs.r-pkg.org/badges/epiR)](https://cran.r-project.org/package=epiR)
 [![total](https://cranlogs.r-pkg.org/badges/grand-total/epiR)](https://cranlogs.r-pkg.org/)
 [![status](https://tinyverse.netlify.com/badge/epiR)](https://CRAN.R-project.org/package=epiR)
@@ -23,11 +22,11 @@ zero-inflation, convergence or singularity.
 
 ## Installation
 
-[![CRAN](http://www.r-pkg.org/badges/version/performance)](https://cran.r-project.org/package=performance)
+[![CRAN](http://www.r-pkg.org/badges/version/epiR)](https://cran.r-project.org/package=epiR)
 [![performance status
-badge](https://easystats.r-universe.dev/badges/performance)](https://easystats.r-universe.dev)
+badge](https://easystats.r-universe.dev/badges/epiR)](https://easystats.r-universe.dev)
 [![R
-check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?branch=main)](https://github.com/easystats/performance/actions)
+check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?branch=main)](https://github.com/easystats/epiR/actions)
 
 The *performance* package is available on CRAN, while its latest
 development version is available on R-universe (from *rOpenSci*).
