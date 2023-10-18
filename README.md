@@ -6,6 +6,8 @@
 
 epiR is a package of tools for the quantitative epidemiologist. The package is developed and maintained by the [Veterinary Epidemiology group](https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne) at the [University of Melbourne](https://www.unimelb.edu.au/), Australia and [Ausvet](https://ausvet.com.au), Australia.
 
+The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id1611139482) and [Android](https://play.google.com/store/apps/details?id=au.melbourne.uni.epitools) devices provides access to many of the functions in `epiR` using a smart phone.
+
 ## Installation
 
 [![CRAN](http://www.r-pkg.org/badges/version/epiR)](https://cran.r-project.org/package=epiR)
@@ -142,7 +144,7 @@ The naming convention for the sample size functions in `epiR` is: `epi.ss` (samp
 
 ### II. SURVEILLANCE
 
-Below, `SSe` stands for surveillance system sensitivity. That is, the average probability that a surveillance system (as a whole) will return a positive surveillance outcome, given disease is present in the population at a level equal to or greater than a specified design prevalence.
+Below, SSe stands for surveillance system sensitivity. Surveillance system sensitivity is the average probability that a surveillance system (as a whole) will return a positive surveillance outcome, given disease is present in the population at a level equal to or greater than a specified design prevalence.
 
 1. Representative sampling --- sample size
 
