@@ -12,8 +12,6 @@ epiR is a general purpose package of tools for the quantitative epidemiologist.
 [![R
 check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?branch=main)](https://github.com/easystats/epiR/actions)
 
-The *performance* package is available on CRAN, while its latest
-development version is available on R-universe (from *rOpenSci*).
 
 | Type        | Source     | Command                                                                |
 |-------------|------------|------------------------------------------------------------------------|
