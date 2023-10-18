@@ -18,7 +18,7 @@ development version is available on R-universe (from *rOpenSci*).
 | Type        | Source     | Command                                                                |
 |-------------|------------|------------------------------------------------------------------------|
 | Release     | CRAN       | `install.packages("epiR")`                                             |
-|---------------------------------------------------------------------------------------------------|
+
 
 The tables below provide a summary of the main functions and data sets in the package. An alphabetical list of all functions and datasets is available by typing \code{library(help = epiR)} in the R console.
 
