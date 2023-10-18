@@ -222,45 +222,28 @@ Below, `SSe` stands for surveillance system sensitivity. That is, the average pr
 | `rsu.pstar`          | Design prevalence back calculation.                                                        |
 | `rsu.sep`            | Probability disease is less than specified design prevalence.                              |
 
-Once you have downloaded the package, you can then load it using:
-
-``` r
-library("epiR")
-```
-
-> **Tip**
->
-> Instead of `library(performance)`, use `library(easystats)`. This will
-> make all features of the easystats-ecosystem available.
->
-> To stay updated, use `easystats::install_latest()`.
-
 ## Citation
 
-To cite performance in publications use:
+To cite `epiR` in publications use:
 
 ``` r
-citation("performance")
-#> To cite package 'performance' in publications use:
+citation("epiR")
+
+#> To cite package ‘epiR’ in publications use:
 #> 
-#>   Lüdecke et al., (2021). performance: An R Package for Assessment, Comparison and
-#>   Testing of Statistical Models. Journal of Open Source Software, 6(60), 3139.
-#>   https://doi.org/10.21105/joss.03139
-#> 
+#>   Stevenson M, Sergeant E, Firestone S (2023). epiR: Tools for the Analysis of Epidemiological Data. R package
+#>   version 2.0.66, <https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne>.
+
 #> A BibTeX entry for LaTeX users is
 #> 
-#>   @Article{,
-#>     title = {{performance}: An {R} Package for Assessment, Comparison and Testing of Statistical Models},
-#>     author = {Daniel Lüdecke and Mattan S. Ben-Shachar and Indrajeet Patil and Philip Waggoner and Dominique Makowski},
-#>     year = {2021},
-#>     journal = {Journal of Open Source Software},
-#>     volume = {6},
-#>     number = {60},
-#>     pages = {3139},
-#>     doi = {10.21105/joss.03139},
+#>   @Manual{,
+#>     title = {epiR: Tools for the Analysis of Epidemiological Data},
+#>     author = {Mark Stevenson and Evan Sergeant and Simon Firestone},
+#>     year = {2023},
+#>     note = {R package version 2.0.66},
+#>     url = {https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne},
 #>   }
 ```
-
 
 </div>
 </div>
