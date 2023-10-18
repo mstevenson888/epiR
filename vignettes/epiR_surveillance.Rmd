@@ -1,5 +1,5 @@
 ---
-title: "<h1 style='text-align:center;'><img src='epiR-logo.svg' style='vertical-align:middle; width:15%; margin-right:10px;'/> Surveillance Assessment Using epiR</h1>"
+title: "<h1 style='text-align:center;'>Surveillance system assessment using <img src='../man/figures/logo.svg' style='vertical-align:middle; width:10%; margin-right:10px;'/></h1>"
 author: "Mark Stevenson and Evan Sergeant"
 date: "`r Sys.Date()`"
 bibliography: epiR_surveillance.bib
