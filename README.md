@@ -38,19 +38,19 @@ The functions in \pkg{epiR} can be categorised into two main groups: tools for e
 |----------------------|------------------------------------------------------------------------|
 | `epi.conf`           | Confidence intervals.                                                  |
 | `epi.descriptives`   | Descriptive statistics.                                                |
-|-----------------------------------------------------------------------------------------------|
+
 
 2. Measures of health and measures of association
 
-\tabular{ll}{
-    \code{\link{epi.directadj}}         \tab Directly adjusted incidence rate estimates. \cr
-    \code{\link{epi.edr}}               \tab Compute estimated dissemination ratios from outbreak event data. \cr
-    \code{\link{epi.empbayes}}          \tab Empirical Bayes estimates of observed event counts. \cr
-    \code{\link{epi.indirectadj}}       \tab Indirectly adjusted incidence risk estimates. \cr
-    \code{\link{epi.insthaz}}           \tab Instantaneous hazard estimates based on Kaplan-Meier survival estimates. \cr
-    \code{\link{epi.2by2}}              \tab Measures of association from data presented in a 2 by 2 table. \cr
-  }
-}
+| Function name        | Details                                                                |
+|----------------------|------------------------------------------------------------------------|
+| `epi.directadj`      | Directly adjusted incidence rate estimates.                            |
+| `epi.edr`            | Compute estimated dissemination ratios from outbreak event data.       |
+| `epi.empbayes`       | Empirical Bayes estimates of observed event counts.                    |
+| `epi.indirectadj`    | Indirectly adjusted incidence risk estimates.                          |
+| `epi.insthaz`        | Instantaneous hazard estimates based on Kaplan-Meier survival estimates.|
+| `epi.2by2`           |  Measures of association from data presented in a 2 by 2 table.        |
+
 
 3. Diagnostic tests
 
