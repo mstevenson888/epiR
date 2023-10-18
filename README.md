@@ -4,7 +4,7 @@
 [![total](https://cranlogs.r-pkg.org/badges/grand-total/epiR)](https://cranlogs.r-pkg.org/)
 [![status](https://tinyverse.netlify.com/badge/epiR)](https://CRAN.R-project.org/package=epiR)
 
-epiR is a general purpose package of tools for the quantitative epidemiologist.
+epiR is a package of tools for the quantitative epidemiologist. The package is developed and maintained by the [Veterinary Epidemiology group](https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne) at the [University of Melbourne](https://www.unimelb.edu.au/), Australia and [Ausvet](https://ausvet.com.au), Australia.
 
 ## Installation
 
