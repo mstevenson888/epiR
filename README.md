@@ -18,7 +18,7 @@ check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?
 | Release     | CRAN       | `install.packages("epiR")`                                             |
 
 
-The tables below provide a summary of the main functions and data sets in the package. An alphabetical list of all functions and datasets is available by typing \code{library(help = epiR)} in the R console.
+The tables below provide a summary of the main functions and data sets in the package. An alphabetical list of all functions and datasets is available by typing \code`library(help = epiR)` in the R console.
 
 For further information on any of these functions, type `help(name)` or `?name` where `name` is the name of the function or dataset.
 
@@ -26,133 +26,129 @@ For details on how to use `epiR` for routine epidemiological work start R, type 
 
 ## Contents
 
-The functions in \pkg{epiR} can be categorised into two main groups: tools for epidemioliological analysis and tools for the analysis of surveillance data. A summary of the package functions is as follows:
+The functions in \pkg{epiR} can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. A summary of the package functions is as follows:
 
 ### I. EPIDEMIOLOGY
 
 1. Descriptive statistics
 
-| Function name        | Details                                                                |
-|----------------------|------------------------------------------------------------------------|
-| `epi.conf`           | Confidence intervals.                                                  |
-| `epi.descriptives`   | Descriptive statistics.                                                |
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.conf`           | Confidence intervals.                                                                      |
+| `epi.descriptives`   | Descriptive statistics.                                                                    |
 
 
 2. Measures of health and measures of association
 
-| Function name        | Details                                                                |
-|----------------------|------------------------------------------------------------------------|
-| `epi.directadj`      | Directly adjusted incidence rate estimates.                            |
-| `epi.edr`            | Compute estimated dissemination ratios from outbreak event data.       |
-| `epi.empbayes`       | Empirical Bayes estimates of observed event counts.                    |
-| `epi.indirectadj`    | Indirectly adjusted incidence risk estimates.                          |
-| `epi.insthaz`        | Instantaneous hazard estimates based on Kaplan-Meier survival estimates.|
-| `epi.2by2`           |  Measures of association from data presented in a 2 by 2 table.        |
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.directadj`      | Directly adjusted incidence rate estimates.                                                |
+| `epi.edr`            | Compute estimated dissemination ratios from outbreak event data.                           |
+| `epi.empbayes`       | Empirical Bayes estimates of observed event counts.                                        |
+| `epi.indirectadj`    | Indirectly adjusted incidence risk estimates.                                              |
+| `epi.insthaz`        | Instantaneous hazard estimates based on Kaplan-Meier survival estimates.                   |
+| `epi.2by2`           |  Measures of association from data presented in a 2 by 2 table.                            |
 
 
 3. Diagnostic tests
 
-\tabular{ll}{
-    \code{\link{epi.betabuster}}         \tab An R version of Wes Johnson and Chun-Lung Su's Betabuster. \cr
-    \code{\link{epi.herdtest}}           \tab Estimate the characteristics of diagnostic tests applied at the herd (group) level. \cr
-    \code{\link{epi.nomogram}}           \tab Compute the post-test probability of disease given characteristics of a diagnostic test. \cr
-    \code{\link{epi.pooled}}             \tab Estimate herd test characteristics when samples are pooled. \cr
-    \code{\link{epi.prev}}               \tab Compute the true prevalence of a disease in a population on the basis of an imperfect test. \cr
-    \code{\link{epi.tests}}              \tab Sensitivity, specificity and predictive value of a diagnostic test. \cr
-  }
-}
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.betabuster`     | An R version of Wes Johnson and Chun-Lung Su's Betabuster.                                 |
+| `epi.herdtest`       | Estimate the characteristics of diagnostic tests applied at the herd (group) level.        |
+| `epi.nomogram`       | Compute the post-test probability of disease given characteristics of a diagnostic test.   |
+| `epi.pooled`         | Estimate herd test characteristics when samples are pooled.                                |
+| `epi.prev`           | Compute the true prevalence of a disease in a population on the basis of an imperfect test.|
+| `epi.tests`          | Sensitivity, specificity and predictive value of a diagnostic test.                        |
+
 
 4. Meta-analysis
 
-\tabular{ll}{
-    \code{\link{epi.dsl}}                \tab Mixed-effects meta-analysis of binary outcome data using the DerSimonian and Laird method. \cr
-    \code{\link{epi.iv}}                 \tab Fixed-effects meta-analysis of binary outcome data using the inverse variance method. \cr
-    \code{\link{epi.mh}}                 \tab Fixed-effects meta-analysis of binary outcome data using the Mantel-Haenszel method. \cr
-    \code{\link{epi.smd}}                \tab Fixed-effects meta-analysis of continuous outcome data using the standardised mean difference method. \cr
-  }
-}
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.dsl`            | Mixed-effects meta-analysis of binary outcome data using the DerSimonian and Laird method. |
+| `epi.iv`             | Fixed-effects meta-analysis of binary outcome data using the inverse variance method.      |
+| `epi.mh`             | Fixed-effects meta-analysis of binary outcome data using the Mantel-Haenszel method.       |
+| `epi.smd`            | Fixed-effects meta-analysis of continuous outcome data using the standardised mean difference method.|
+
 
 5. Regression analysis tools
 
-\tabular{ll}{
-    \code{\link{epi.cp}}                 \tab Extract unique covariate patterns from a data set. \cr
-    \code{\link{epi.cpresids}}           \tab Compute covariate pattern residuals from a logistic regression model. \cr
-    \code{\link{epi.interaction}}        \tab Relative excess risk due to interaction in a case-control study. \cr
-  }
-}
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.cp`             | Extract unique covariate patterns from a data set.                                         |
+| `epi.cpresids`       | Compute covariate pattern residuals from a logistic regression model.                      |
+| `epi.interaction`    | Relative excess risk due to interaction in a case-control study.                           |
+
 
 6. Data manipulation tools
 
-\tabular{ll}{
-    \code{\link{epi.asc}}                \tab Write matrix to an ASCII raster file. \cr
-    \code{\link{epi.convgrid}}           \tab Convert British National Grid georeferences to easting and northing coordinates. \cr
-    \code{\link{epi.dms}}                \tab Convert decimal degrees to degrees, minutes and seconds and vice versa. \cr
-    \code{\link{epi.ltd}}                \tab Calculate lactation to date and standard lactation (that is, 305 or 270 day) milk yields. \cr
-    \code{\link{epi.offset}}             \tab Create an offset vector based on a list suitable for WinBUGS. \cr
-    \code{\link{epi.RtoBUGS}}            \tab Write data from an R list to a text file in WinBUGS-compatible format. \cr
-  }
-}
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.asc`            | Write a matrix to an ASCII raster file.                                                    |
+| `epi.convgrid`       | Convert British National Grid georeferences to easting and northing coordinates.           |
+| `epi.dms`            | Convert decimal degrees to degrees, minutes and seconds and vice versa.                    |
+| `epi.ltd`            | Calculate lactation to date and standard lactation (that is, 305 or 270 day) milk yields.  |
+| `epi.offset`         | Create an offset vector based on a list suitable for WinBUGS.                              |
+| `epi.RtoBUGS`        | Write data from an R list to a text file in WinBUGS-compatible format.                     |
+
 
 7. Sample size calculations
 
-The naming convention for the sample size functions in \pkg{epiR} is: \code{epi.ss} (sample size) + an abbreviation to represent the sampling design (e.g., \code{simple}, \code{strata}, \code{clus1}, \code{clus2}) + an abbreviation of the objectives of the study (\code{est} when you want to estimate a population parameter or \code{comp} when you want to compare two groups) + a single letter defining the outcome variable type (\code{b} for binary, \code{c} for continuous and \code{s} for survival data).
+The naming convention for the sample size functions in `epiR` is: `epi.ss` (sample size) + an abbreviation to represent the sampling design (e.g., `simple`, `strata`, `clus1`, `clus2`) + an abbreviation of the objectives of the study (`est` when you want to estimate a population parameter or `comp` when you want to compare two groups) + a single letter defining the outcome variable type (`b` for binary, `c` for continuous and `s` for survival [time to event] data).
 
-\tabular{ll}{
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.sssimpleestb`   | Sample size to estimate a binary outcome using simple random sampling.                     |
+| `epi.sssimpleestc`   | Sample size to estimate a continuous outcome using simple random sampling.                 |
 
-    \code{\link{epi.sssimpleestb}}       \tab Sample size to estimate a binary outcome using simple random sampling. \cr
-    \code{\link{epi.sssimpleestc}}       \tab Sample size to estimate a continuous outcome using simple random sampling. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssstrataestb}}       \tab Sample size to estimate a binary outcome using stratified random sampling. \cr
-    \code{\link{epi.ssstrataestc}}       \tab Sample size to estimate a continuous outcome using stratified random sampling. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssclus1estb}}        \tab Sample size to estimate a binary outcome using one-stage cluster sampling. \cr
-    \code{\link{epi.ssclus1estc}}        \tab Sample size to estimate a continuous outcome using one-stage cluster sampling. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssclus2estb}}        \tab Sample size to estimate a binary outcome using two-stage cluster sampling. \cr
-    \code{\link{epi.ssclus2estc}}        \tab Sample size to estimate a continuous outcome using two-stage cluster sampling. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssxsectn}}           \tab Sample size, power or detectable prevalence ratio for a cross-sectional study. \cr
-    \code{\link{epi.sscohortc}}          \tab Sample size, power or detectable risk ratio for a cohort study using count data. \cr
-    \code{\link{epi.sscohortt}}          \tab Sample size, power or detectable risk ratio for a cohort study using time at risk data. \cr
-    \code{\link{epi.sscc}}               \tab Sample size, power or detectable odds ratio for case-control studies. \cr
-                                         \tab  \cr  
-    \code{\link{epi.sscompb}}            \tab Sample size, power and detectable risk ratio when comparing binary outcomes. \cr
-    \code{\link{epi.sscompc}}            \tab Sample size, power and detectable risk ratio when comparing continuous outcomes. \cr
-    \code{\link{epi.sscomps}}            \tab Sample size, power and detectable hazard when comparing time to event. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssequb}}             \tab Sample size for a parallel equivalence or equality trial, binary outcome. \cr
-    \code{\link{epi.ssequc}}             \tab Sample size for a parallel equivalence or equality trial, continuous outcome. \cr
-                                         \tab  \cr  
-    \code{\link{epi.sssupb}}             \tab Sample size for a parallel superiority trial, binary outcome. \cr
-    \code{\link{epi.sssupc}}             \tab Sample size for a parallel superiority trial, continuous outcome. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssninfb}}            \tab Sample size for a non-inferiority trial, binary outcome. \cr
-    \code{\link{epi.ssninfc}}            \tab Sample size for a non-inferiority trial, continuous outcome. \cr
-                                         \tab  \cr  
-    \code{\link{epi.ssdetect}}           \tab Sample size to detect an event. \cr
-    \code{\link{epi.ssdxsesp}}           \tab Sample size to estimate the sensitivity or specificity of a diagnostic test. \cr
-    \code{\link{epi.ssdxtest}}           \tab Sample size to validate a diagnostic test in the absence of a gold standard. \cr
-  }
-}
+| `epi.ssstrataestb`   | Sample size to estimate a binary outcome using stratified random sampling.                 |
+| `epi.ssstrataestc`   | Sample size to estimate a continuous outcome using stratified random sampling.             |
+
+| `epi.ssclus1estb`    | Sample size to estimate a binary outcome using one-stage cluster sampling.                 |
+| `epi.ssclus1estc`    | Sample size to estimate a continuous outcome using one-stage cluster sampling.             |
+
+| `epi.ssclus2estb`    | Sample size to estimate a binary outcome using two-stage cluster sampling.                 |
+| `epi.ssclus2estc`    | Sample size to estimate a continuous outcome using two-stage cluster sampling.             |
+
+| `epi.ssxsectn`       | Sample size, power or detectable prevalence ratio for a cross-sectional study.             |
+| `epi.sscohortc`      | Sample size, power or detectable risk ratio for a cohort study using count data.           |
+| `epi.sscohortt`      | Sample size, power or detectable risk ratio for a cohort study using time at risk data.    |
+| `epi.sscc`           | Sample size, power or detectable odds ratio for case-control studies.                      |
+
+| `epi.sscompb`        | Sample size, power and detectable risk ratio when comparing binary outcomes.               |
+| `epi.sscompc`        | Sample size, power and detectable risk ratio when comparing continuous outcomes.           |
+| `epi.sscomps`        | Sample size, power and detectable hazard when comparing time to event.                     |
+
+| `epi.ssequb`         | Sample size for a parallel equivalence or equality trial, binary outcome.                  |
+| `epi.ssequc`         | Sample size for a parallel equivalence or equality trial, continuous outcome.              |
+
+| `epi.sssupb`         | Sample size for a parallel superiority trial, binary outcome.                              |
+| `epi.sssupc`         | Sample size for a parallel superiority trial, continuous outcome.                          |
+ 
+| `epi.ssninfb`        | Sample size for a parallel non-inferiority trial, binary outcome.                          |
+| `epi.ssninfc`        | Sample size for a parallel non-inferiority trial, continuous outcome.                      |
+
+| `epi.ssdetect`       | Sample size to detect an event.                                                            |
+| `epi.ssdxsesp`       | Sample size to estimate the sensitivity or specificity of a diagnostic test.               |
+| `epi.ssdxtest`       | Sample size to validate a diagnostic test in the absence of a gold standard.               |
 
 8. Miscellaneous functions
 
-\tabular{ll}{
-    \code{\link{epi.prcc}}               \tab Compute partial rank correlation coefficients. \cr
-    \code{\link{epi.psi}}                \tab Compute proportional similarity indices. \cr
-    \code{\link{epi.realrisk}}           \tab return absolute risks from odds, incidence risk and hazard ratios. \cr
-  }
-}
-
+| Function name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.prcc`           | Compute partial rank correlation coefficients.                                             |
+| `epi.psi`            | Compute proportional similarity indices.                                                   |
+| `epi.realrisk`       | Return absolute risks from odds, incidence risk and hazard ratios.                         |
 
 9. Data sets
-  \tabular{ll}{
-    \code{\link{epi.epidural}}           \tab Rates of use of epidural anaesthesia in trials of caregiver support. \cr
-    \code{\link{epi.incin}}              \tab Laryngeal and lung cancer cases in Lancashire 1974 - 1983. \cr
-    \code{\link{epi.SClip}}              \tab Lip cancer in Scotland 1975 - 1980. \cr
-  }
- }
-}
+
+| Data set name        | Details                                                                                    |
+|----------------------|--------------------------------------------------------------------------------------------|
+| `epi.epidural`       | Rates of use of epidural anaesthesia in trials of caregiver support.                       |
+| `epi.incin`          | Laryngeal and lung cancer cases in Lancashire 1974 - 1983.                                 |
+| `epi.SClip`          | Lip cancer in Scotland 1975 - 1980.                         |
+
 
 \section{II. SURVEILLANCE}{
 
