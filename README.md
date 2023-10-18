@@ -31,15 +31,14 @@ check](https://github.com/easystats/performance/workflows/R-CMD-check/badge.svg?
 The *performance* package is available on CRAN, while its latest
 development version is available on R-universe (from *rOpenSci*).
 
-| Type        | Source     | Command                                                                       |
-|-------------|------------|-------------------------------------------------------------------------------|
-| Release     | CRAN       | `install.packages("performance")`                                             |
-| Development | R-universe | `install.packages("performance", repos = "https://easystats.r-universe.dev")` |
+| Type        | Source     | Command                                                                |
+|-------------|------------|------------------------------------------------------------------------|
+| Release     | CRAN       | `install.packages("epiR")`                                             |
 
 Once you have downloaded the package, you can then load it using:
 
 ``` r
-library("performance")
+library("epiR")
 ```
 
 > **Tip**
