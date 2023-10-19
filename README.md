@@ -10,8 +10,11 @@ The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id16111394
 
 iOs <img src='man/figures/qrcode_apps.apple.com.png' align="right" height="139" />
 
+<<<<<<< HEAD
 Android <img src='man/figures/qrcode_play.google.com.png' align="right" height="139" />
 
+=======
+>>>>>>> 4f3fbfd0e615b7a9129a18ea6b174f1c69cf8529
 ## Installation
 
 [![CRAN](http://www.r-pkg.org/badges/version/epiR)](https://cran.r-project.org/package=epiR)
