@@ -8,6 +8,8 @@
 
 The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id1611139482) and [Android](https://play.google.com/store/apps/details?id=au.melbourne.uni.epitools) devices provides access to many of the functions in `epiR` using a smart phone.
 
+iOs <img src='man/figures/qrcode_apps.apple.com.png' align="right" height="139" />
+
 ## Installation
 
 [![CRAN](http://www.r-pkg.org/badges/version/epiR)](https://cran.r-project.org/package=epiR)
