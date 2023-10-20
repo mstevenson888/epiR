@@ -116,25 +116,6 @@ The meta-analysis functions here are based on those presented in Egger et al. (2
 
 The naming convention for the sample size functions in `epiR` is: `epi.ss` (sample size) + an abbreviation to represent the sampling design (e.g., `simple`, `strata`, `clus1`, `clus2`) + an abbreviation of the objectives of the study (`est` when you want to estimate a population parameter or `comp` when you want to compare two groups) + a single letter defining the outcome variable type (`b` for binary, `c` for continuous and `s` for survival [time to event] data).
 
-Note that for the comparison functions, statistical power is returned if a study size is entered. Take the following example (from the documentation for `epi.sscompb`).
-
-A government initiative has decided to reduce the prevalence of male smoking to, at most, 30%. A sample survey is planned to test, at the 0.05 level, the hypothesis that the percentage of smokers in the male population is 30% against the one-sided alternative that it is greater. The survey should be able to find a prevalence of 32%, when it is true, with 0.90 power. How many men need to be sampled?
-
-``` r
-epi.sscompb(N = NA, treat = 0.30, control = 0.32, n = NA, power = 0.90, 
-   r = 1, design = 1, sided.test = 1, nfractional = FALSE, conf.level = 0.95)
-```
-
-A total of 4568 men should be sampled: 2284 in the treatment group and 2284 in the control group. The risk ratio (that is, the prevalence of smoking in males post government initiative divided by the prevalence of smoking in males pre initiative) is 0.94.
-
-What will be the statistical power of this study if only 2000 men (1000 in the treatment group and 1000 in the control group) are sampled?
-
-``` r
-epi.sscompb(N = NA, treat = 0.30, control = 0.32, n = 2000, power = NA, 
-   r = 1, design = 1, sided.test = 1, nfractional = FALSE, conf.level = 0.95)
-```
-If only 2000 men are sampled the expected statistical power of the study is 0.62.
-
 
 | Function             | Details                                                                                    |
 |----------------------|--------------------------------------------------------------------------------------------|
@@ -162,6 +143,26 @@ If only 2000 men are sampled the expected statistical power of the study is 0.62
 | `epi.ssdetect`       | Sample size to detect an event.                                                            |
 | `epi.ssdxsesp`       | Sample size to estimate the sensitivity or specificity of a diagnostic test.               |
 | `epi.ssdxtest`       | Sample size to validate a diagnostic test in the absence of a gold standard.               |
+
+
+Note that for the comparison functions, statistical power is returned if a study size is entered. Take the following example (from the documentation for `epi.sscompb`).
+
+A government initiative has decided to reduce the prevalence of male smoking to, at most, 30%. A sample survey is planned to test, at the 0.05 level, the hypothesis that the percentage of smokers in the male population is 30% against the one-sided alternative that it is greater. The survey should be able to find a prevalence of 32%, when it is true, with 0.90 power. How many men need to be sampled?
+
+``` r
+epi.sscompb(N = NA, treat = 0.30, control = 0.32, n = NA, power = 0.90, 
+   r = 1, design = 1, sided.test = 1, nfractional = FALSE, conf.level = 0.95)
+```
+
+A total of 4568 men should be sampled: 2284 in the treatment group and 2284 in the control group. The risk ratio (that is, the prevalence of smoking in males post government initiative divided by the prevalence of smoking in males pre initiative) is 0.94.
+
+What will be the statistical power of this study if only 2000 men (1000 in the treatment group and 1000 in the control group) are sampled?
+
+``` r
+epi.sscompb(N = NA, treat = 0.30, control = 0.32, n = 2000, power = NA, 
+   r = 1, design = 1, sided.test = 1, nfractional = FALSE, conf.level = 0.95)
+```
+If only 2000 men are sampled the expected statistical power of the study is 0.62.
 
 
 8. Miscellaneous functions
