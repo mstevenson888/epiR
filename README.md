@@ -10,9 +10,9 @@ The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id16111394
 
 <table>
   <tr>
-    <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_apps.apple.com.png" alt="1" width = 139px height = 139px></td>
+    <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_apps.apple.com.png" alt="1"></td>
     <td valign="top" align="center" width="33%"><span style="font-size: 8pt">&nbsp;</td>
-    <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_play.google.com.png" alt="2" width = 139px height = 139px></td>
+    <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_play.google.com.png" alt="2"></td>
   </tr> 
   <tr>
     <td valign="top" align="center" width="33%">Apple</td>
