@@ -41,7 +41,7 @@ For details on how to use `epiR` for routine epidemiological work start R, type 
 
 ## Contents
 
-The functions in `epiR` can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. A summary of the package functions is as follows:
+The functions in `epiR` can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. The epidemiology functions have a `epi.` prefix. The surveillance functions have a `rsu.` prefix. A summary of the package functions is as follows:
 
 ### I. EPIDEMIOLOGY
 
