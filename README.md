@@ -15,7 +15,7 @@ The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id16111394
     <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_play.google.com.png" alt="2"></td>
   </tr> 
   <tr>
-    <td valign="top" align="center" width="33%">Apple</td>
+    <td valign="top" align="center" width="33%">iOS</td>
     <td valign="top" align="center" width="33%">&nbsp;</td>
     <td valign="top" align="center" width="33%">Android</td>
   </tr>
