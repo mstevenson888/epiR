@@ -1,6 +1,6 @@
 Package: epiR
 Version: 2.0.66
-Date: 2023-10-16
+Date: 2023-11-03
 Title: Tools for the Analysis of Epidemiological Data
 Authors@R: c(person(given = "Mark", family = "Stevenson", role = c("aut", "cre"), email = "mark.stevenson1@unimelb.edu.au", comment = c(ORCID = "0000-0003-1890-9784")),
    person(given = "Evan", family = "Sergeant", role = "aut", email = "evansergeant@gmail.com"),
@@ -32,7 +32,7 @@ Imports: BiasedUrn, pander, methods, sf, lubridate, zoo, flextable, officer
 Suggests: MASS (>= 3.1-20), dplyr, foreign, ggplot2, knitr, mapproj, rmarkdown, plyr, RColorBrewer, scales, sp, spatstat, spData, tidyr
 VignetteBuilder: knitr
 License: GPL (>= 2)
-Packaged: 2022-10-16 12:00:00 UTC;
+Packaged: 2022-11-03 12:00:00 UTC;
 URL: https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne
 RoxygenNote: 7.1.0
 NeedsCompilation: no
