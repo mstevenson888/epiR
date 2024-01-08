@@ -6,7 +6,7 @@
 
 `epiR` is a package of tools for quantitative epidemiologists developed and maintained by the [Veterinary Epidemiology group](https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne) at the [University of Melbourne](https://www.unimelb.edu.au/), Australia and [Ausvet](https://ausvet.com.au), Australia.
 
-The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id1611139482) and [Android](https://play.google.com/store/apps/details?id=au.melbourne.uni.epitools) devices provides access to many of the functions in `epiR` using a smart phone. Use the following QR codes to install the EpiTools on your phone:
+The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id1611139482) and [Android](https://play.google.com/store/apps/details?id=au.melbourne.uni.epitools) devices provides access to many of the functions in `epiR` using a smart phone. Use the following QR codes to install EpiTools on your phone:
 
 <table>
   <tr>
@@ -15,7 +15,7 @@ The EpiTools app for [iPhone](https://apps.apple.com/vn/app/epi-tools/id16111394
     <td valign="top" align="center" width="33%"><img src="man/figures/qrcode_play.google.com.png" alt="2"></td>
   </tr> 
   <tr>
-    <td valign="top" align="center" width="33%">Apple</td>
+    <td valign="top" align="center" width="33%">iOS</td>
     <td valign="top" align="center" width="33%">&nbsp;</td>
     <td valign="top" align="center" width="33%">Android</td>
   </tr>
@@ -41,7 +41,7 @@ For details on how to use `epiR` for routine epidemiological work start R, type 
 
 ## Contents
 
-The functions in `epiR` can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. A summary of the package functions is as follows:
+The functions in `epiR` can be categorised into two main groups: Tools for epidemiolological analysis and tools for the analysis and assessment of surveillance data. The epidemiology functions have a `epi.` prefix. The surveillance functions have a `rsu.` prefix. A summary of the package functions is as follows:
 
 ### I. EPIDEMIOLOGY
 
