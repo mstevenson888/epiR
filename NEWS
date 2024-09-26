@@ -1,3 +1,17 @@
+CHANGES IN epiR VERSION 2.0.76
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Error in data preparation for function epi.2by2 where outcome = "as.rows" with multiple strata corrected. 
+    [Spotted by Jose G Conde Santiago]
+
+
+CHANGES IN epiR VERSION 2.0.75
+SIGNIFICANT USER-VISIBLE CHANGES
+
+    o Descriptive epidemiology vignette changed to remove use of ESRI shape files which are now unsupported by the spData package.
+    [Suggested by Mark Stevenson]
+
+
 CHANGES IN epiR VERSION 2.0.74
 SIGNIFICANT USER-VISIBLE CHANGES
 

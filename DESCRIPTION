@@ -1,6 +1,6 @@
 Package: epiR
-Version: 2.0.74
-Date: 2024-04-27
+Version: 2.0.76
+Date: 2024-09-14
 Title: Tools for the Analysis of Epidemiological Data
 Authors@R: c(person(given = "Mark", family = "Stevenson", role = c("aut", "cre"), email = "mark.stevenson1@unimelb.edu.au", comment = c(ORCID = "0000-0003-1890-9784")),
    person(given = "Evan", family = "Sergeant", role = "aut", email = "evansergeant@gmail.com"),
@@ -29,10 +29,9 @@ Maintainer: Mark Stevenson <mark.stevenson1@unimelb.edu.au>
 Description: Tools for the analysis of epidemiological and surveillance data. Contains functions for directly and indirectly adjusting measures of disease frequency, quantifying measures of association on the basis of single or multiple strata of count data presented in a contingency table, computation of confidence intervals around incidence risk and incidence rate estimates and sample size calculations for cross-sectional, case-control and cohort studies. Surveillance tools include functions to calculate an appropriate sample size for 1- and 2-stage representative freedom surveys, functions to estimate surveillance system sensitivity and functions to support scenario tree modelling analyses.   
 Depends: R (>= 3.0.0), survival
 Imports: BiasedUrn, pander, methods, sf, lubridate, zoo, flextable, officer
-Suggests: MASS (>= 3.1-20), dplyr, foreign, ggplot2, knitr, mapproj, rmarkdown, plyr, RColorBrewer, scales, sp, spatstat, spData, tidyr
+Suggests: MASS (>= 3.1-20), dplyr, foreign, ggplot2, knitr, rmarkdown, plyr, RColorBrewer, scales, sp, spData (>= 2.3.0), spatstat, tidyr
 VignetteBuilder: knitr
 License: GPL (>= 2)
-Packaged: 2024-04-27 12:00:00 UTC;
-URL: https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne
+Packaged: 2024-09-14 12:00:00 UTC;
 RoxygenNote: 7.1.0
 NeedsCompilation: no
